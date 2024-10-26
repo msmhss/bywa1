@@ -9,6 +9,10 @@
 body {
     margin: 0;
 }
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -361,12 +365,12 @@ section.categories div.flex {
 }
 section.categories div.flex a.box {
     text-decoration: none;
-    background: #000;
     width: 270px;
     border: 0.01mm solid #b2c5ff;
     background: #fff;
     border-radius: 17px;
     box-shadow: 0.1px 0.1px 13px -7px;
+    margin-right: 35px;
 }
 section.categories div.flex a.box:hover {
     background:  rgb(246, 246, 246);
@@ -413,6 +417,7 @@ section.course .see {
     background: none;
     position: relative;
     left: 39px;
+    justify-content: flex-end;
 }
 section.course .see:hover {
     background:  rgb(225, 241, 255);
@@ -434,6 +439,8 @@ section.course .see:active {
 }
 section.course div.flex {
     display: flex;
+    flex-direction: row;
+    gap: 28px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -605,11 +612,14 @@ section.customer .see {
     margin-right: 11px;
     margin-left: 11px;
     border-radius: 7px;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 section.customer .see:hover {
     transition-property: all;
     transition-duration: 333ms;
     background: #9c9eae;
+    cursor: pointer;
 }
 section.customer div.flex {
     display: flex;
@@ -1027,6 +1037,7 @@ section.intro div.flex div.right div.box div.top button.first {
     font-weight: 600;
     height: 41px;
     border-radius: 7px;
+    cursor: pointer;
 }
 section.intro div.flex div.right div.box div.top button.last {
     display: block;
@@ -1038,6 +1049,7 @@ section.intro div.flex div.right div.box div.top button.last {
     font-weight: 799;
     height: 41px;
     border-radius: 7px;
+    cursor: pointer;
 }
 section.intro div.flex div.right div.box div.bottom {
     padding: 21px;
